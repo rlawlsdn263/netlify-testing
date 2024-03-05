@@ -13,7 +13,7 @@ export default function Signin() {
       username: emailRef.current?.value,
       password: passwordRef.current?.value,
       redirect: true,
-      callbackUrl: `${process.env.NEXTAUTH_URL}`,
+      callbackUrl: `${process.env.NEXT_PUBLIC_NEXTAUTH_URL}`,
     });
   };
 
