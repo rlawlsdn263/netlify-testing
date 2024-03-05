@@ -13,7 +13,7 @@ export default function Signin() {
       username: emailRef.current?.value,
       password: passwordRef.current?.value,
       redirect: true,
-      callbackUrl: "http://localhost:3000",
+      callbackUrl: `${process.env.NEXTAUTH_URL}`,
     });
   };
 
