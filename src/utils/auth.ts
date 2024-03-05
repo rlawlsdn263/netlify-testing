@@ -26,7 +26,7 @@ export const authOptions = {
         });
         /* 로그인이 실패하면 에러처리 */
         if (!res.ok) {
-          return null;
+          return console.log("로그인 실패");
         }
         return await res.json();
       },
