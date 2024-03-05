@@ -14,7 +14,7 @@ export default function Signin() {
       password: passwordRef.current?.value,
       // redirect: false,
       redirect: true,
-      callbackUrl: `${process.env.NEXT_PUBLIC_NEXTAUTH_URL}`,
+      callbackUrl: `${process.env.NEXTAUTH_URL}`,
     });
   };
 
