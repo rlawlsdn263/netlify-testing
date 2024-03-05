@@ -12,9 +12,9 @@ export default function Signin() {
     await signIn("credentials", {
       username: emailRef.current?.value,
       password: passwordRef.current?.value,
-      // redirect: false,
-      redirect: true,
-      callbackUrl: `${process.env.NEXTAUTH_URL}`,
+      redirect: false,
+      // redirect: true,
+      // callbackUrl: `${process.env.NEXTAUTH_URL}`,
     });
   };
 
